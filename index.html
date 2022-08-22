@@ -1,42 +1,127 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>Brooke's Fantastic Webstite</title><style>
-            body 
-    </head>
-    
-    <body>
-        <!-- Visible HTML elements GO HERE  -->
+
+<head>
+    <title>Brooke's Fantastic Webstite</title>
+    <style>
+        body {
+            background: rgb(252, 255, 232);
+            color: rgb(18, 18, 17);
+            padding: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        #all-contents {
+            max-width: 800px;
+            margin: auto;
+        }
+        
+
+        /* navigation menu */
+        nav {
+            background: rgb(198, 204, 253);
+            margin-bottom: 20 px;
+            display: flex;
+            padding: 10px;
+        }
+
+        h1 {
+            display: flex;
+            align-items: center;
+            color: black;
+            flex: 1;
+            margin: 0;
+        }
+
+        #nav-ul {
+            list-style-image: none;
+        }
+
+        .nav-li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* main container area beneath menu */
+        main {
+            background: rgb(234, 238, 255);
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .sidebar {
+            margin-right: 25px;
+            padding: 10px;
+        }
+
+        .sidebar-img {
+            width: 200px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 15px;
+        }
+
+        #interests {
+            border: 4px silver ridge;
+            padding: 8px;
+        }
+
+        h2,
+        h3 {
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Visible HTML elements GO HERE  -->
     <div>
         <nav>
+            <h1>Brooke's Amazing Website</h1>
+            <ul>
+                <li>
+                    <a href="index.html"> Home </a>
+                </li>
+                <li>
+                    <a href="portfolio.html"> Portfolio </a>
+                </li>
+            </ul>
+        </nav>
 
-            </nav>
-           
-                <main>
-                    <!-- Sidebar section -->
-                        <div>
-                            <img src="https://www.allthingsbabynames.com/wp-content/uploads/2020/03/baby-girl-names-2021-03-01T200703.327.png">
-                        </div>
+        <main>
+            <!-- Sidebar section -->
+            <div>
+                <img src="https://www.allthingsbabynames.com/wp-content/uploads/2020/03/baby-girl-names-2021-03-01T200703.327.png"
+                    width="250">
+            </div>
 
-                        <!-- Content section -->
-                    <div>
-                        <h2>
-                            Brooke Cheramie
-                        </h2>
-                        <p>
-                        11th grade student at Hahnville High School
-                        </p>
-                        <!-- Interests section -->
-                        <div>
-                            <h3>Interests</h3>
-                            <ul>
-                                <li>Music</li>
-                                <li>Cooking</li>
-                                <li>Being with my friends</li>
-                            </ul>
-                        </div>
-                    </div>
-            </main>
-        </div>
-    </body>
+            <!-- Content section -->
+            <div>
+                <h2>
+                    Brooke Cheramie
+                </h2>
+                <p>
+                    11th grade student at Hahnville High School
+                </p>
+                <!-- Interests section -->
+                <div>
+                    <h3>Interests</h3>
+                    <ul>
+                        <li>music</li>
+                        <li>cooking</li>
+                        <li>being with my friends</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
 </html>
