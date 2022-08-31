@@ -18,7 +18,7 @@
 
         /* navigation menu */
         nav {
-            background: rgb(30, 101, 109);
+            background: rgb(91, 112, 101);
             margin-bottom: 20 px;
             display: flex;
             padding: 10px;
@@ -48,7 +48,7 @@
 
         /* main container area beneath menu */
         main {
-            background: rgb(0, 41, 60);
+            background: rgb(91, 112, 101);
             display: flex;
             margin-top: 20px;
         }
@@ -72,7 +72,9 @@
             padding: 8px;
         }
 
-        h2,
+        h2{
+            color:#fff
+        }
         h3 {
             margin: 0px;
         }
@@ -81,7 +83,7 @@
 
 <body>
     <!-- Visible HTML elements GO HERE  -->
-    <div>
+    <div id="all-contents">
         <nav>
             <h1>Brooke's Amazing Website</h1>
             <ul>
@@ -96,7 +98,7 @@
 
         <main>
             <!-- Sidebar section -->
-            <div>
+            <div class="content">
                 <img src="https://www.allthingsbabynames.com/wp-content/uploads/2020/03/baby-girl-names-2021-03-01T200703.327.png"
                     width="250">
             </div>
@@ -110,9 +112,8 @@
                     11th grade student at Hahnville High School
                 </p>
                 <!-- Interests section -->
-                <div>
+                <div id="intrests">
                     <h3>Interests</h3>
-                    <ul>
                         <li>music</li>
                         <li>cooking</li>
                         <li>being with my friends</li>

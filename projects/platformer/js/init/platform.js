@@ -28,17 +28,23 @@
 
     ////////////////////////////////////////////////////////////////////////
     // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
-
+    createPlatform(780,550,0.3,0.9);
+    createPlatform(550,300,0.3,0.9);
+    createPlatform(800,180,0.5,0.9);
+    createPlatform(10,120,0.7,0.9);
+    createPlatform(700,10,0.7,0.9);
+    createPlatform(400,180,0.5,0.9);
+    createPlatform(10,600,0.5,0.9);
     /*
      * ground : here, we create a floor. Given the width of of the platform
      * asset, giving it a scaleX and scaleY of 2 will stretch it across the
      * bottom of the game.
      */
-    createPlatform(0, game.world.height - 32, 3, 2); // DO NOT DELETE
+    createPlatform(0, game.world.height - 35, 3, 2); // DO NOT DELETE
 
     // example:
-    createPlatform(400, 250);
-    createPlatform(170, 460, 0.5);
+    createPlatform(10,400,0.8,0.9);
+    createPlatform(390,470,0.6,0.9);
 
     // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////
