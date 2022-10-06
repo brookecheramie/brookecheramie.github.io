@@ -15,10 +15,10 @@ a:link {
 color: black;
 }
 a:visited {
-color: yellow; 
+color: white; 
 }
 a:hover {
-color: white
+color: black;
 }
 a:active {
 color: black;
@@ -33,7 +33,8 @@ table{
     padding: 10px
 }
 nav{
-    background-color: maroon;
+    border-style: solid;
+    background-color: tan;
     width: 60%;
     margin: auto;
     padding: 10px;
