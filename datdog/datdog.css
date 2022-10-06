@@ -1,0 +1,23 @@
+<style>
+h1 {
+    text-align: center;
+}
+body {
+    background-color: rgb(235, 202, 113);
+}
+#mainContent {
+    border-style: solid;
+    background-color: rgb(44, 99, 201);
+}
+a:link {
+color: black;
+}
+a:visited {
+color: green; 
+}
+a:hover {
+color: white
+}
+a:active {
+color: black;
+}
