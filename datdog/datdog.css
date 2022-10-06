@@ -1,4 +1,3 @@
-<style>
 h1 {
     text-align: center;
 }
@@ -8,16 +7,36 @@ body {
 #mainContent {
     border-style: solid;
     background-color: rgb(44, 99, 201);
+    width: 60%;
+    margin: auto;
+    padding: 10px
 }
 a:link {
 color: black;
 }
 a:visited {
-color: green; 
+color: yellow; 
 }
 a:hover {
 color: white
 }
 a:active {
 color: black;
+}
+img{
+    display: block;
+    margin: auto;
+}
+table{
+    width: 60%;
+    margin: auto;
+    padding: 10px
+}
+nav{
+    background-color: maroon;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    margin: bottom: 20px;
+    text-color: black;
 }
