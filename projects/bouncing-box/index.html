@@ -8,7 +8,7 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: teal;
+			background-color: salmon;
 			font-size: 300%;
 			text-align: center;
 			display: block;
@@ -18,6 +18,7 @@
 		}
 		.board{
 			height: 100vh;
+			background-image: url(images/pink.png);
 		}
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -39,7 +40,8 @@
 			var box = jQuery('.box');	// reference to the HTML .box element
 			var board = jQuery('.board');	// reference to the HTML .board element
 			var boardWidth = board.width();	// the maximum X-Coordinate of the screen
-
+			var boardHeight = jQuery(window).height();
+			
 			// Every 50 milliseconds, call the update Function (see below)
 			setInterval(update, 50);
 			
@@ -62,8 +64,11 @@
 			
 			// TODO 2 - Variable declarations 
 			var positionX = 0;
-			var speed = 10;
+			var speedX = 10;
 			var points = 0;
+			var positionY = 0;
+			var speedY = 10;
+			
 						
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
@@ -71,15 +76,24 @@
 			turn it around! 
 			*/
 			function update() {
-				positionX = positionX + speed;
-				moveBoxTo(positionX);
-				if (positionX >= boardWidth) {
-					speed *= -1;
+				positionX = positionX + speedX;
+				positionY = positionY + speedY;
+				moveBoxTo(positionX, positionY);
+				if (positionX >= boardWidth - 70) {
+					speedX *= -1;
 				} 
 				if (positionX <= 0) {
-					speed *= -1;
+					speedX *= -1;
+				}
+
+				if (positionY >= boardHeight - 70) {
+					speedY *= -1;
+				} 
+				if (positionY <= 0) {
+					speedY *= -1;
 				}
 			}
+			
 
 			
 
@@ -91,9 +105,14 @@
 			function handleBoxClick() {
 				positionX = 0;
 				points = points + 1;
-				speed = speed + 3;
+				speedX = speedX + 3;
 				changeBoxText(points);
-
+				if(speedX >= 0){
+					speedX = 3 + speedX;
+				}
+				else if(speedX <= 0){
+					speedX = 3 - speedX;
+				}
 			};
 		})();
 	</script>
